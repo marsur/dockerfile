@@ -1,0 +1,9 @@
+#server must named Dockerfile
+FROM centos:7.9.2009
+MAINTAINER NAME EMAIL
+
+
+
+RUN echo 'proxy=http://100.800.999.21:5555' >> /etc/yum.conf
+
+RUN yum update -y
